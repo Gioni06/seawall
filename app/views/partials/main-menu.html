@@ -1,5 +1,6 @@
+
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -7,15 +8,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">OYGO</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a ng-href="/#/login">Login</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Documentation</a></li>
+                <li><a href="#contact">Issues</a></li>
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apps<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -28,9 +29,17 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">Default</a></li>
-                <li><a href="../navbar-static-top/">Static top</a></li>
-                <li class="active"><a href="./">Fixed top</a></li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" href="../navbar/" data-toggle="dropdown"><span>
+                    <img class="img-circle img-profile" ng-src="{{user[0].profile.profile_image}}" alt="{{user[0].profile.bio}}" />
+                </span>{{user[0].name}}</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a ng-href="/#/login">Profile</a></li>
+                    <li><a ng-href="/#/login">Help</a></li>
+                    <li class="divider"></li>
+                    <li><a ng-href="/#/login">Logout</a></li>
+                </ul>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

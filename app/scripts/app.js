@@ -24,8 +24,14 @@ angular
                 url: '/',
                 templateUrl: 'views/main.html'
             })
+
             .state('login', {
                 url: '/login',
                 templateUrl: 'views/login.html'
+            })
+
+            .state('request invite', {
+                url: '/request-invite',
+                templateUrl: 'views/invite.html'
             });
   }]);

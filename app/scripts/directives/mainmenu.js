@@ -10,6 +10,8 @@ angular.module('applicationApp')
   .directive('mainMenu', function () {
     return {
       templateUrl: 'views/partials/main-menu.html',
-      restrict: 'A'
+      restrict: 'A',
+      require: ['MainCtrl'],
+      controller: "MainCtrl"
     };
   });

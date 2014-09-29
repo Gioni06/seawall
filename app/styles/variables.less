@@ -7,17 +7,17 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              #212121;
+@gray-darker:            darken(#1D1F22, 10%);
+@gray-dark:              #1D1F22;
 @gray:                   #AAAAAA;
 @gray-light:             #EEEEEE;
-@gray-lighter:           lighten(#AAAAAA, 93.5%); // #eee
+@gray-lighter:           lighten(#AAAAAA, 93.5%);
 
-@brand-primary:         #F15F40;
-@brand-success:         #4CAF50;
-@brand-info:            #9C27B0;
-@brand-warning:         #ff9800;
-@brand-danger:          #e51c23;
+@brand-primary:         #006b8d;
+@brand-success:         #00A5D9;
+@brand-info:            #00759A;
+@brand-warning:         #FFB633;
+@brand-danger:          #F15F40;
 
 
 //== Scaffolding
@@ -302,7 +302,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         45px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
@@ -335,22 +335,22 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    64px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray-light;
-@navbar-default-bg:                #fff;
+@navbar-default-color:             @gray-lighter;
+@navbar-default-bg:                @gray-dark;
 @navbar-default-border:            transparent;
 
 // Navbar links
-@navbar-default-link-color:                @gray;
-@navbar-default-link-hover-color:          @gray-dark;
+@navbar-default-link-color:                @gray-lighter;
+@navbar-default-link-hover-color:          @gray;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         @gray-dark;
+@navbar-default-link-active-color:         @gray;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
@@ -362,7 +362,7 @@
 
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           transparent;
-@navbar-default-toggle-icon-bar-bg:        rgba(0,0,0,0.5);
+@navbar-default-toggle-icon-bar-bg:        @gray-lighter;
 @navbar-default-toggle-border-color:       transparent;
 
 

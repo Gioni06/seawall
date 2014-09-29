@@ -9,9 +9,12 @@
  */
 angular.module('applicationApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.user = [{
+        name: "Jonas Duri",
+        email: "jd@oygo.com",
+        profile: {
+            bio: "some bio",
+            profile_image : "/uploads/profile.jpg"
+        }
+    }];
   });
